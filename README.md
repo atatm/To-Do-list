@@ -1,7 +1,7 @@
 # To-Do-list
 
 
-> In this app I made list of To Do tasks. This web page is built using webpack.
+> In this app I made list of To Do tasks which is not interactive at this time. This web page is built using webpack.
 
 ## Built With
 
