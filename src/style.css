@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  margin: 100px auto;
+  height: 100vh;
+}
+
+body main {
+  width: 800px;
+}
+
+.title-section {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.title-section i {
+  position: absolute;
+  right: 10px;
+  font-size: 20px;
+  color: gray;
+}
+
+.title-section span {
+  padding: 20px;
+  font-size: 18px;
+}
+
+.main-section {
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  box-shadow: 20px 20px 50px 5px rgba(0, 0, 0, 0.05);
+  padding-top: 20px;
+}
+
+.padding {
+  padding: 10px 0 10px 10px;
+  border-bottom: 1px solid rgb(224, 224, 224);
+}
+
+.input-text {
+  border: none;
+  font-style: italic;
+  outline: none;
+  padding: 0 0 0 10px;
+  font-size: 16px;
+  width: 90%;
+}
+
+.list-task-here {
+  list-style: none;
+}
+
+.list-task-here li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.vertical-dots {
+  cursor: pointer;
+}
+
+.dot-menu {
+  background-color: rgba(235, 235, 135, 0.5);
+}
+
+.list-item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.clear-btn button {
+  padding: 15px;
+  border: none;
+  width: 100%;
+  background-color: rgb(245, 245, 245);
+  cursor: pointer;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+}
+
+.checked {
+  text-decoration: line-through;
+}
+
+.labels {
+  border: none;
+  height: 18px;
+  outline: none;
+  background: none;
+  padding: 0 100% 0 0;
+}
+
+.delete-btn {
+  display: none;
+  cursor: pointer;
+  position: relative;
+  padding: 0 5px 0 0;
+}
+
+.done-btn {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  right: 30px;
+}
