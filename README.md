@@ -38,7 +38,7 @@ Contributions, issues, and feature requests are welcome!
 
 ### Go Live
 
-https://atatm.github.io/To-Do-list/
+https://atatm.github.io/To-Do-list/dist/index.html
 
 ## Show your support
 
