@@ -1,14 +1,27 @@
 import './style.css';
 
-function listOfItems(index, description, isChecked) {
-  return `<div class="list-item">
-              <input class="check-box" type="checkbox" id="${index}" name="task${index}" value="task"  ${isChecked ? 'checked' : 'uncecked'}>
-              <input class="labels ${isChecked ? 'checked' : ''} " id="label-text ${index}" for="task${index}" disabled value="${description}">
-            
-          </div>
-          <div class="material-symbols-outlined vertical-dots" id=dot${index}>&#xe5d4;</div>
-          <div class="material-symbols-outlined done-btn" id=done${index}>&#xe876;</div>
-          <div class="material-symbols-outlined delete-btn" id=del${index}>&#xe872;</div>
-      </li>`;
-}
-return listOfItems();
+const arrayOfObjects = [
+  {
+    index: 1,
+    description: 'complete set ups',
+    completed: false,
+  },
+  {
+    index: 1,
+    description: 'complete To Do list project',
+    completed: false,
+  },
+];
+
+const todoTask = document.querySelector('.list task here');
+arrayOfObjects.forEach((element) => {
+  const div = document.createElement('li');
+  div.classList.add('lists');
+  div.innerHTML += `
+
+          <i class="uil uil-square-full"></i>
+          <p class="">${element.description}</p>
+          <i class="uil uil-ellipsis-v"></i>
+    `;
+  todoTask.append(div);
+});

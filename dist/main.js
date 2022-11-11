@@ -116,7 +116,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n\n\n//# sourceURL=webpack://to-do-list/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n\nconst arrayOfObjects = [\n  {\n    index: 1,\n    description: 'complete set ups',\n    completed: false,\n  },\n  {\n    index: 1,\n    description: 'complete To Do list project',\n    completed: false,\n  },\n];\n\nconst todoTask = document.querySelector('.list task here');\narrayOfObjects.forEach((element) => {\n  const div = document.createElement('li');\n  div.classList.add('lists');\n  div.innerHTML += `\n\n          <i class=\"uil uil-square-full\"></i>\n          <p class=\"\">${element.description}</p>\n          <i class=\"uil uil-ellipsis-v\"></i>\n    `;\n  todoTask.append(div);\n});\n\n//# sourceURL=webpack://to-do-list/./src/index.js?");
 
 /***/ })
 
