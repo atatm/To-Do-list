@@ -25,14 +25,10 @@ export default class TaskList {
     removeTask(checkbox) {
       const checkboxId = checkbox.target;
       if (checkboxId.checked) {
-        document
-          .getElementById(`label-text ${checkboxId.id}`)
-          .classList.add('checked');
+        document.getElementById(`label-text ${checkboxId.id}`).classList.add('checked');
         this.listObj[checkboxId.id - 1].completed = true;
       } else {
-        document
-          .getElementById(`label-text ${checkboxId.id}`)
-          .classList.remove('checked');
+        document.getElementById(`label-text ${checkboxId.id}`).classList.remove('checked');
         this.listObj[checkboxId.id - 1].completed = false;
       }
       this.populateLocalStorage();
@@ -161,9 +157,10 @@ form.addEventListener('submit', (e) => {
 const targetClearBtn = document.getElementById('clear-btn');
 
 targetClearBtn.addEventListener('click', () => {
-  const filteredArr = task.listObj.filter((x) => x.completed !== false);
+  const filteredArr = task.listObj.filter((x) => x.completed !== true);
   task.listObj = filteredArr;
 
   task.populateLocalStorage();
   task.display();
+  this.findIndex();
 });
