@@ -162,4 +162,5 @@ targetClearBtn.addEventListener('click', () => {
 
   task.populateLocalStorage();
   task.display();
+  this.findIndex();
 });
