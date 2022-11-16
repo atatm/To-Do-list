@@ -5,10 +5,11 @@
 
 ## Built With
 
-- HTML and CSS
+- HTML / CSS
 - JavaScript
-- webpack
-- VS studio code, GitHub.
+- Webpack
+- VS studio code
+- GitHub
 
 ## Getting Started
 
@@ -31,6 +32,11 @@ To run this project locally, make sure you have done the following:
 **Alelign Ayana**
 
 - LinkedIn: [Alelign Ayana](https://linkedin.com/@alelignayana)
+
+**Fuad Nabiyev**
+
+- GitHub: [Fuad Nabiyev](https://github.com/FuadNabi)
+
 
 ## :handshake: Contributing
 
