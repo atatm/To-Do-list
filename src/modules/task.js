@@ -70,7 +70,7 @@ export default class TaskList {
           this.self.listObj.splice(n.index - 1, 1);
         }
       });
-      this.findIndex();
+
       this.populateLocalStorage();
       this.display();
     }
